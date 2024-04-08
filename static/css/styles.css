@@ -133,3 +133,16 @@ button {
     height:100px;
     font-size: 50px;
 }
+.address {
+background-color: blue;
+width: 200px;
+height: 200px;
+border-style: solid;
+border-width: 1px;
+border-color: black;
+color: aqua;
+font-size: 30px;
+
+
+
+}
