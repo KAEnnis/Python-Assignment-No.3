@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+    
+{% block links %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}"> 
+    
+{% endblock %}
+
+{% block content %}
+
+
+<div class="home_Image">
+    <img class="image" src="/static/Images/istockphoto-879813818-612x612.jpg" alt="Image">
+    <h1 class="text2"> HOME PAGE</h1>
+    <div class="text"><p>Super Safety Wear is a leading provider of safety apparel and equipment, catering to diverse industries worldwide. Our extensive range includes high-visibility clothing, helmets, gloves, and footwear, all meeting rigorous safety standards. Committed to reliability and durability, we prioritize the well-being of workers in hazardous environments. With a focus on quality, our products ensure optimal protection, fostering a culture of safety and compliance in workplaces globally. Trust Quality Safety Wear for comprehensive safety solutions tailored to your industry needs.</p></div>
+    <ul class="text1">
+        <li><h1>Indusries</h1></li>
+        <li>Construction</li>
+        <li>Petrochemical</li>
+        <li>Heights</li>
+        <li>water safety</li>
+        <li>Fire Safety</li>
+        <li>Pharmacutical</li>
+    </ul>
+</div>
+   
+
+{% endblock %}

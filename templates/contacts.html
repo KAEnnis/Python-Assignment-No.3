@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block links %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}"> 
+
+{% endblock %}
+{% block content %}
+
+div class="home_Image">
+    <img class="image" src="/static/Images/contact_us.jpg" alt="Image">
+    <h1 class="text2"> CONTACT US</h1>
+    <div class="text"><p>Super Safety Store </p></div>
+    <ul class="text1">
+        <li><h1>Indusries</h1></li>
+        <li>Address: 123 Old Dublin Street, Dublin 1</li>
+        <li>Phone: 01 1231231</li>
+        <li>Fax: 01 1231232</li>
+        <li>Email: info@sss.com</li>
+      
+    </ul>
+</div>
+   
+     
+
+{% endblock %}

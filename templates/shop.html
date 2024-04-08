@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block links %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}"> 
+<script src="script.js"></script>
+    
+{% endblock %}
+{% block content %}
+
+    
+    {% for product in products%}
+<div class="shop">
+    <div class="product-gallery">
+        <figure >
+            
+            <img    height="200px"
+                    src="{{product['image_url']}}" 
+                    alt="image of product">
+            <figcaption>€{{product['price']}}, {{product['description']}}</figcaption>
+        </figure>
+    </div>
+</div>
+    {% endfor%}
+     
+
+{% endblock %}

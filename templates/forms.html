@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block links %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}"> 
+    {% endblock %}
+
+{% block content %}
+<div class="home_Image">
+    <img class="image" src="/static/Images/add-product.jpg" alt="Image">
+    <h1 class="text2"> Add New Product</h1>
+    <div class="text"><p>This is were to add new product</p></div>
+    <div class="form">
+    <!-- {{request}} -->
+    <form method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="price">Price</label>
+        <input type="text" id="price" name="price">
+       <!-- <label for="amount">Amount</label>
+        <input type="text" id="name" name="name">
+        <label for="image">Image</label>
+        <input type="text" id="price" name="price">-->
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <ul class="text1">
+        <li><h1>Indusries</h1></li>
+    
+    </ul>
+    
+</div>
+    
+{% endblock %}

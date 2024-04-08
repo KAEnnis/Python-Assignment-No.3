@@ -1,0 +1,1 @@
+alert("picking up the script.js file")

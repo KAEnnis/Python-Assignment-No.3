@@ -1,0 +1,135 @@
+body{
+    background-color:white;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+  th{background-color: rgb(21, 208, 233);}
+  
+  .error {
+    color: green;
+}
+
+.banner {
+    background-color: blue;
+    color: azure;
+    height: 100%;
+    width: 100%;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+    font-size: 500%;
+}
+
+nav {
+    
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    background-color: azure;
+    font-size: 100%;
+    border-color: blue;
+    border-width: 1px;
+    border-style: solid;
+    
+ 
+}
+
+.container {
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width for better responsiveness */
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: block;
+    width: 5%;
+    height: auto;
+    padding-left: 95%;
+
+}
+.text {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 500%; 
+    text-align: right;
+}
+
+.text1 {
+    position: absolute;
+    top: 100%;
+    left: 82%;
+    transform: translate(-100%, -60%);
+    color: white;
+    font-size: 500%; 
+    text-align: left;
+}
+.text2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
+    font-size: 600%; 
+    text-align: left;
+}
+
+.form {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 500%; 
+    text-align: left;
+    border-width: 1px;
+    border-color: black;
+    background-color: grey;
+}
+.shop{
+width: 100%;
+background-color: white;
+}
+
+.product-gallery {
+    padding: 0 3px;
+  float: left;
+  width: 20%;
+  font-size: 400%;
+  color: red;
+  
+}
+
+.product-gallery img {
+    width: 40%;
+    height: auto;
+    display: block;
+}
+
+label{
+    width: 30%;
+    height: 100px;
+}
+
+input{
+    width: 30%;
+    height: 100px;
+}
+button {
+
+    width: 15%;
+    height:100px;
+    font-size: 50px;
+}
