@@ -3,27 +3,133 @@
 
     
 {% block links %}
-<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}"> 
-    
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 {% endblock %}
 
 {% block content %}
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="/static/Images/th.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ADD PRODUCT</a></li>
+                <li><a href="">SHOP</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
 
-
-<div class="home_Image">
-    <img class="image" src="/static/Images/istockphoto-879813818-612x612.jpg" alt="Image">
-    <h1 class="text2"> HOME PAGE</h1>
-    <div class="text"><p>Super Safety Wear is a leading provider of safety apparel and equipment, catering to diverse industries worldwide. Our extensive range includes high-visibility clothing, helmets, gloves, and footwear, all meeting rigorous safety standards. Committed to reliability and durability, we prioritize the well-being of workers in hazardous environments. With a focus on quality, our products ensure optimal protection, fostering a culture of safety and compliance in workplaces globally. Trust Quality Safety Wear for comprehensive safety solutions tailored to your industry needs.</p></div>
-    <ul class="text1">
-        <li><h1>Indusries</h1></li>
-        <li>Construction</li>
-        <li>Petrochemical</li>
-        <li>Heights</li>
-        <li>water safety</li>
-        <li>Fire Safety</li>
-        <li>Pharmacutical</li>
-    </ul>
+<div class="text-box">
+    <h1>Super Safety Store</h1>
+    <p>Super Safety Wear is a leading provider of safety apparel and equipment, catering to diverse industries worldwide.<br> Our extensive range includes high-visibility clothing, helmets, gloves, and footwear, all meeting rigor-ous safety standards.<br> Committed to reliability and durability, we priori-tize the well-being of workers in hazardous environments. <br> With a focus on quality, our products ensure optimal protection, fostering a culture of safety and compliance in workplaces globally.<br> Trust Quality Safety Wear for comprehensive safety solutions tailored to your industry needs.</p>
+    <a href="" class="btn">Visit Us</a>
 </div>
+</section>
+
+<!-- Industries-->
+
+<section class="industries">
+    <h1>Industries We Support</h1>
+    <p> We Support the Petrochemical industry and supply a large selection of Flame Retardant / Anti-Static Clothing,<br> We sell High Visibility Clothing for all applications,<br> We stock an extensive range of corporate uniforms including soft shell jackets and shirts</p>
+
+    <div class="row">
+        <div class="ind-col">
+            <h3>Petrochemical</h3>
+            <P>The Petrochemical industry requires specialist flame retardant and anti-static clothing to protect personell from creating a static spark from the clothing <br>and protection from heat in the event of a fire</P>
+        </div>
+        <div class="ind-col">
+            <h3>Construction</h3>
+            <P>The Petrochemical industry requires specialist flame retardant and anti-static clothing to protect personell from creating a static spark from the clothing <br>and protection from heat in the event of a fire</P>
+        </div>
+        <div class="ind-col">
+            <h3>Corporate Wear</h3>
+            <P>The Petrochemical industry requires specialist flame retardant and anti-static clothing to protect personell from creating a static spark from the clothing <br>and protection from heat in the event of a fire</P>
+        </div>
+    </div>
+</section>
+<!-----  Our Facilities     -->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our Dublin based show room is located in the center of dublin and easily assable from the M50,<br> We stock 20,000 products in our warehouse and have a display room for our corporate workwear.<br> Our inhouse embroidery section is located inour warehouse.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="/static/Images/contact_us.jpg">
+            <div class="layer">
+                <h3>WAREHOUSE</h3>
+            </div>
+        </div>
+        <div class="facilities-col">
+            <img src="/static/Images/istockphoto-517725409-612x612.jpg">
+            <div class="layer">
+                <h3>CCORPORATE</h3>
+            </div>
+        </div>
+        <div class="facilities-col">
+            <img src="/static/Images/istockphoto-639796472-612x612.jpg">
+            <div class="layer">
+                <h3>EMBROIDERY</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="testimonials">
+    <h1>testimonials</h1>
+    <p>This is what our customers say</p>
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+
+
+    <div class="row">
+        <div class="test-col">
+            <img src="/static/Images/jb.jpg">
+            <div>
+                <p>"Great service and quality product"</p>
+                <h3>Jason Borne</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+        <div class="test-col">
+            <img src="/static/Images/md.jpg">
+            <div>
+                <p>"Amazing embroidery design on our corporate wear"</p>
+                <h3>Mary Doyle</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+<section class="footer">
+<p>Web Site Built BY ABC</p>
+
+</section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
    
 
 {% endblock %}
